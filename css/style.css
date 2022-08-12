@@ -50,6 +50,11 @@ h3{
     margin: 35px;
 }
 
+h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(245, 132, 71);
+}
+
 /* Estilos de los textos */
 a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -68,10 +73,18 @@ p{
 }
 
 /* Estilos del main del index */
+
 .imgportada{
     height: 300px;
     width: auto;
     border-radius: 25px;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+.imgportada:hover{
+    -webkit-transform: perspective(150px) rotateX(45deg);
+    transform: perspective(150px) rotateX(45deg);
 }
 
 .imgBrindis{
@@ -116,6 +129,7 @@ footer{
 .item1{
     justify-self: stretch;
     grid-area: item1;    
+    position: relative;
 }
 
 .item2{
