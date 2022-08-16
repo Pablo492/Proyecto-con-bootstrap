@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$color1: rgb(216, 238, 237);
+$color2: rgb(40, 95, 246);
+$color3: rgb(245, 132, 71);
+$font1:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+body{
+    header{
+        width: 100%;
+        background-color: $color1
+    }
+    nav{
+        background-image: url(fondo.png);
+    }
+    h1{
+        color: $color2;
+        font-family: $font1;
+    }
+    h2{
+        color: $color3;
+        font-family: $font1;
+    }
+    h3{
+        color: $color3;
+        font-family: $font1;
+    }
+}
