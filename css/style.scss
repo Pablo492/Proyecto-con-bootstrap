@@ -1,31 +1,36 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-$color1: rgb(216, 238, 237);
-$color2: rgb(40, 95, 246);
-$color3: rgb(245, 132, 71);
-$color4: rgb(184, 64, 4);
+$colores: map-merge((
+    $primario: rgb(216, 238, 237), 
+    $secundario: rgb(40, 95, 246),
+    $terciario: rgb(245, 132, 71),
+    $complementario: rgb(184, 64, 4),),
+    $color);
+
 $font1:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+//Mixins//
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;}
+
+
 body{
-    background-color: $color1;
+    background-color: map-get($color , $primario );
     header{
         width: 100%;
     }
-    
     h1{
-        color: $color2;
+        color: map-get($color , $secundario);
         font-family: $font1;
     }
     h2{
-        color: $color3;
+        color: map-get($color , $terciario);
         font-family: $font1;
     }
     h3{
-        color: $color3;
+        map-get($color , $terciario);
         font-family: $font1;
     }
     p{
@@ -33,6 +38,16 @@ body{
         padding: 15px;
         color: $color4;
     }
+}
+
+/* Estilos del footer */
+footer{
+    border-radius: 8px;
+    background-color: rgb(93, 2, 2);
+    color: rgb(46, 80, 227);
+    text-align: center;
+    width: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
