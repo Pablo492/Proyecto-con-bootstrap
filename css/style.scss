@@ -44,10 +44,10 @@ body{
 footer{
     border-radius: 8px;
     background-color: rgb(93, 2, 2);
-    color: rgb(46, 80, 227);
+    color: map-get($color, $secundario)
     text-align: center;
     width: auto;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: $font1;
 }
 
 
