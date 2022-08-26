@@ -30,7 +30,7 @@ body{
         font-family: $font1;
     }
     h3{
-        map-get($color , $terciario);
+        color: map-get ( $color , $terciario);
         font-family: $font1;
     }
     p{
@@ -44,7 +44,7 @@ body{
 footer{
     border-radius: 8px;
     background-color: rgb(93, 2, 2);
-    color: map-get($color, $secundario)
+    color: map-get($color, $secundario);
     text-align: center;
     width: auto;
     font-family: $font1;
