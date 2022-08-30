@@ -39,10 +39,6 @@ body main {
   margin: 45px;
 }
 
-main {
-  margin: 45px;
-}
-
 /* Estilos de page contacto */
 .contact {
   display: flex;
@@ -143,7 +139,7 @@ footer {
 }
 .carouselacerca div {
   height: 250px;
-  border-radius: 10PX;
+  border-radius: 10px;
 }
 
 nav {

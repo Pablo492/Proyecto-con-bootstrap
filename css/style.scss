@@ -20,7 +20,6 @@ $height: 300px;
 
 /* Estilos de los textos */
 
-
 body{
     background-color: map-get($color , primario );
     font-family: $font1;
@@ -60,9 +59,6 @@ body{
         margin: 45px;
     };
 };
-main{
-    margin: 45px;
-};
 
 /* Estilos de page contacto */
 .contact{
@@ -82,30 +78,24 @@ main{
     grid-gap: 2px;
     align-items: center;
     gap: 40px;
-}
-
-
+};
 .item1{
     justify-self: stretch;
     grid-area: item1;    
     position: relative;
-}
-
+};
 .item2{
     display: flex;
     justify-content: space-around;
     grid-area: item2;
     width: auto;
-}
-
+};
 .item3{
     grid-area: item3;  
-}
-
+};
 .item4{
     grid-area: video;
-}
-
+};
 
 /* estilos en page Modelos */
 .tabla{ 
@@ -113,26 +103,23 @@ main{
     background-color: rgba(207, 0, 0, 0.675);
     font-size:large;
     color: rgb(90, 31, 16);
-}
-
+};
 .imgmodelos{
     grid-area: item1;
     display: flex;
     justify-items: center;
     align-items: center;
-}
-
+};
 .modelos{
     justify-content: space-around;
     width: 100px;
     height: auto;
     border-radius: 10px;
-
-}
+};
 
 /* mediaQueries */
-@media screen and (min-width: 768px) {
-    .gridconteiner{
+@media screen and (min-width: 768px) 
+    {.gridconteiner{
         grid-template-columns: repeat(3,1fr);
     }
     .item1{
@@ -167,7 +154,7 @@ footer{
     height:$height;
     div{
         height: 250px;
-        border-radius: 10PX;
+        border-radius: 10px;
     }
 };
 
