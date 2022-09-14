@@ -72,9 +72,11 @@ body{
 /* Grid */
 .gridconteiner{
     display: grid;
-    grid-template-rows: auto auto auto auto 100px;
+    grid-template-rows: auto auto 100px;
     grid-template-columns: auto auto auto auto;
-    grid-template-areas: "item1 item1 item1 item1""item2  item2 item2  .""item3  item3 video video";
+    grid-template-areas: "item1 item1 item1 item1"
+                        "item2  item2 item2  ."
+                        "item3  item3 video video";
     grid-gap: 2px;
     align-items: center;
     gap: 40px;
@@ -104,12 +106,7 @@ body{
     font-size:large;
     color: rgb(90, 31, 16);
 };
-.imgmodelos{
-    grid-area: item1;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-};
+
 .modelos{
     justify-content: space-around;
     width: 100px;

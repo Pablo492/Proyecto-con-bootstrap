@@ -1,3 +1,7 @@
+.imgportada{
+   
+    
+}
 .imgportada:hover{
     -webkit-transform: perspective(150px) rotateX(45deg);
     transform: perspective(150px) rotateX(45deg);
@@ -6,10 +10,7 @@
     height: 300px;
     border-radius: 15px;
 }
-.imgportada:hover{
-    -webkit-transform: perspective(150px) rotateX(45deg);
-    transform: perspective(150px) rotateX(45deg);
-}
+
 .imgBrindis{
     height: $height;
     border-radius: 15px;
@@ -19,4 +20,10 @@
 }
 .imgCont{
     height:100px;
+}
+.imgmodelos{
+    grid-area: item1;
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
