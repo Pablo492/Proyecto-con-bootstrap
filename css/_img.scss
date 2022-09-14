@@ -1,7 +1,4 @@
-.imgportada{
-   
-    
-}
+
 .imgportada:hover{
     -webkit-transform: perspective(150px) rotateX(45deg);
     transform: perspective(150px) rotateX(45deg);
@@ -20,6 +17,8 @@
 }
 .imgCont{
     height:100px;
+    width: 100px;
+
 }
 .imgmodelos{
     grid-area: item1;

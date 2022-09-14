@@ -51,7 +51,7 @@ body main {
 /* Grid */
 .gridconteiner {
   display: grid;
-  grid-template-rows: auto auto auto auto 100px;
+  grid-template-rows: auto auto 100px;
   grid-template-columns: auto auto auto auto;
   grid-template-areas: "item1 item1 item1 item1" "item2  item2 item2  ." "item3  item3 video video";
   grid-gap: 2px;
@@ -86,13 +86,6 @@ body main {
   background-color: rgba(207, 0, 0, 0.675);
   font-size: large;
   color: rgb(90, 31, 16);
-}
-
-.imgmodelos {
-  grid-area: item1;
-  display: flex;
-  justify-items: center;
-  align-items: center;
 }
 
 .modelos {
@@ -168,10 +161,6 @@ nav {
   border-radius: 15px;
 }
 
-.imgportada:hover {
-  transform: perspective(150px) rotateX(45deg);
-}
-
 .imgBrindis {
   height: 300px;
   border-radius: 15px;
@@ -183,4 +172,12 @@ nav {
 
 .imgCont {
   height: 100px;
+  width: 100px;
+}
+
+.imgmodelos {
+  grid-area: item1;
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
