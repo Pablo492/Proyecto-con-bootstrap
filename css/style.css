@@ -14,24 +14,24 @@ body h1 {
   margin: 20px;
 }
 body h2 {
-  color: rgb(245, 132, 71);
+  color: rgb(71, 210, 245);
 }
 body h3 {
-  color: rgb(245, 132, 71);
+  color: rgb(71, 210, 245);
   margin: 35px;
 }
 body h4 {
-  color: rgb(245, 132, 71);
+  color: rgb(71, 210, 245);
 }
 body p {
   padding: 15px;
-  color: rgb(184, 64, 4);
+  color: rgb(1, 1, 1);
   text-align: center;
   text-decoration: none;
 }
 body a {
   text-align: center;
-  color: rgb(184, 64, 4);
+  color: rgb(1, 1, 1);
   text-decoration: none;
   padding: 20px;
 }
@@ -57,7 +57,7 @@ header .Firma {
   flex-direction: column;
   height: 300px;
   width: 700px;
-  color: rgb(184, 64, 4);
+  color: rgb(1, 1, 1);
 }
 .contact .card {
   margin: 10px;
@@ -148,7 +148,7 @@ form .botonenviar {
 /* Estilos del footer */
 footer {
   border-radius: 8px;
-  background-color: rgb(93, 2, 2);
+  background-color: rgb(40, 95, 246);
   color: rgb(40, 95, 246);
   text-align: center;
   width: auto;
@@ -180,6 +180,11 @@ footer {
   display: flex;
   justify-items: center;
   align-items: center;
+}
+
+.logos {
+  width: 200px;
+  padding: 10px;
 }
 
 nav {
