@@ -60,18 +60,49 @@ body{
     };
 };
 
+//Estilos del Header//
+header{
+    height: 700px;
+    background-color: white;
+    .Logo{
+        width: 400px;
+    }
+    .Firma{
+        margin-left: 60px;
+        width: 400px;
+    }
+}
+
 /* Estilos de page contacto */
 .contact{
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     height: 300px;
     width: 700px;
     color: map-get($color , complementario);
+    .card{
+        margin:10px;
+        width: 650px;}
 };
+
+form{
+    .form-control{
+    background-color:darkgrey;
+    }
+    .form-control1{
+        width: 100px;
+    }
+    .botonenviar{
+        padding: 25px;
+    }
+}
+
 
 /* Grid */
 .gridconteiner{
     display: grid;
+    width: auto;
+    margin: 10px;
     grid-template-rows: auto auto 100px;
     grid-template-columns: auto auto auto auto;
     grid-template-areas: "item1 item1 item1 item1"
@@ -147,14 +178,15 @@ footer{
     font-family: $font1;
 }
 
+
+@import "_img";
+
+@import "_nav";
+
 .carouselacerca{
     height:$height;
     div{
         height: 250px;
         border-radius: 10px;
     }
-};
-
-
-@import "_nav";
-@import "_img";
+}

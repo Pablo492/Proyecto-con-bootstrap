@@ -39,18 +39,46 @@ body main {
   margin: 45px;
 }
 
+header {
+  height: 700px;
+  background-color: white;
+}
+header .Logo {
+  width: 400px;
+}
+header .Firma {
+  margin-left: 60px;
+  width: 400px;
+}
+
 /* Estilos de page contacto */
 .contact {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 300px;
   width: 700px;
   color: rgb(184, 64, 4);
+}
+.contact .card {
+  margin: 10px;
+  width: 650px;
+}
+
+form .form-control {
+  background-color: darkgrey;
+}
+form .form-control1 {
+  width: 100px;
+}
+form .botonenviar {
+  padding: 25px;
 }
 
 /* Grid */
 .gridconteiner {
   display: grid;
+  width: auto;
+  margin: 10px;
   grid-template-rows: auto auto 100px;
   grid-template-columns: auto auto auto auto;
   grid-template-areas: "item1 item1 item1 item1" "item2  item2 item2  ." "item3  item3 video video";
@@ -127,12 +155,31 @@ footer {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.carouselacerca {
-  height: 300px;
-}
-.carouselacerca div {
-  height: 250px;
+.imgportada {
+  width: 500px;
   border-radius: 10px;
+}
+
+.imgportada:hover {
+  transform: perspective(650px) rotateX(45deg);
+}
+
+.imgBrindis {
+  height: 300px;
+  border-radius: 15px;
+}
+
+.imgCont {
+  height: 100px;
+  width: 100px;
+}
+
+.imgmodelos {
+  height: 300px;
+  grid-area: item1;
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }
 
 nav {
@@ -152,32 +199,10 @@ nav {
   text-align: end;
 }
 
-.imgportada:hover {
-  transform: perspective(150px) rotateX(45deg);
-}
-
-.imgBrindis {
-  height: 300px;
-  border-radius: 15px;
-}
-
-.imgBrindis {
-  height: 300px;
-  border-radius: 15px;
-}
-
-.imgmodelos {
+.carouselacerca {
   height: 300px;
 }
-
-.imgCont {
-  height: 100px;
-  width: 100px;
-}
-
-.imgmodelos {
-  grid-area: item1;
-  display: flex;
-  justify-items: center;
-  align-items: center;
+.carouselacerca div {
+  height: 250px;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
