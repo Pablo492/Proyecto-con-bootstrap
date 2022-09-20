@@ -54,9 +54,9 @@ header .Firma {
 /* Estilos de page contacto */
 .contact {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 300px;
-  width: 700px;
+  width: 800px;
   color: rgb(1, 1, 1);
 }
 .contact .card {
@@ -64,6 +64,15 @@ header .Firma {
   width: 650px;
 }
 
+@media screen and (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    margin-bottom: 400px;
+  }
+  .contact .card {
+    width: 400px;
+  }
+}
 form .form-control {
   background-color: darkgrey;
 }
@@ -176,10 +185,17 @@ footer {
 
 .imgmodelos {
   height: 300px;
-  grid-area: item1;
   display: flex;
   justify-items: center;
   align-items: center;
+  width: 20px;
+  gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .imgmodelos {
+    flex-direction: column;
+    width: 10px;
+  }
 }
 
 .logos {

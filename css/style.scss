@@ -76,14 +76,26 @@ header{
 /* Estilos de page contacto */
 .contact{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     height: 300px;
-    width: 700px;
+    width: 800px;
     color: map-get($color , complementario);
     .card{
         margin:10px;
         width: 650px;}
 };
+
+@media screen and (max-width: 768px) 
+{
+    .contact{
+        flex-direction: column;
+        margin-bottom: 400px;
+        .card{
+            width:400px;
+        }
+
+    }
+}
 
 form{
     .form-control{
